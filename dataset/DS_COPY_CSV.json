@@ -1,0 +1,23 @@
+{
+	"name": "DS_COPY_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_COPY_CSV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "*",
+				"fileSystem": "bulk"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
