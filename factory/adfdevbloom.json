@@ -1,0 +1,9 @@
+{
+	"name": "adfdevbloom",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "20b42d2c-0fd1-436a-984f-e7f7dc9d107f",
+		"tenantId": "2c5bdaf4-8ff2-4bd9-bd54-7c50ab219590"
+	}
+}

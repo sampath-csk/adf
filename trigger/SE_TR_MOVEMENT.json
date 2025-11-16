@@ -1,0 +1,25 @@
+{
+	"name": "SE_TR_MOVEMENT",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_TRIGGER",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/eventtriggercsv/blobs/data",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/2677c651-60e6-498d-8caa-b123b8b3a704/resourceGroups/rg_dev_bloomberg/providers/Microsoft.Storage/storageAccounts/adlsdevcsvbulk",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
