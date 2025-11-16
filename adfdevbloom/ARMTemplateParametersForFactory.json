@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevbloom"
+		},
+		"LS_COPY_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_SINK_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_COPY_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevcsvbulk.dfs.core.windows.net/"
+		},
+		"LS_SINK_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevsinkdata.dfs.core.windows.net/"
+		}
+	}
+}
